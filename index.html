@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="static/lib/jquery.js"></script>
+</head>
+
+<body>
+<textarea style="width:500px; height:200px" id="wqr"></textarea>
+</body>
+<script>
+var jjjj = "mail00.com,mailout.steelbb.com,tsi.steelbb.com,prod.alphamail.platts.com,dr.alphamail.platts.com,rp1.mail00.com,hv1.mail00.com,steelbb.com,spglobal.com,platts.com,a1.mail00.com,pricesthesteelindex.com,kingsman.com,bentekenergy.com,eclipseenergy.com";
+var gggg = "goertek.com,goertekusa.com,goerlight.com,goerlife.com,lokomo.cn,dynaudio.com.cn,mototek.cn,libratone.com.cn,goertek.co.kr,goertek.eu";
+var mmmm = "mai@l00.com,mail@out.steelbb.com,tsi.stee@lbb.com,prod.alpham@ail.platts.com,dr.alph@amail.platts.com,rp1.mai@l00.com,hv1.ma@il00.com,ste@elbb.com,spgl@obal.com,pl@atts.com,a1.m@ail00.com,price@sthesteelindex.com,ki@ngsman.com,benteke@nergy.com,eclips@eenergy.com";
+
+$("#wqr").val(jjjj);
+
+$("#wqr").on("blur", function(){
+	var value = $(this).val();
+	//if(value && !/^[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)* +(,[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)* +)*$/.test(value)){
+	//if(value && !/^[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)+(,[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)+)*$/.test(value)){
+	//if(value && !/^[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)+(,[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)+)*$/.test(value)){
+	//if(value && !/^[.a-z0-9A-Z_-]+@\w+([-.]\w+)+(,[.a-z0-9A-Z_-]+@\w+([-.]\w+)+)*$/.test(value)){
+	//if(value && !(/^[.a-z0-9A-Z_-]+([-.]\w+)+(,[.a-z0-9A-Z_-]+([-.]\w+)+)*$/.test(value) || /^[.a-z0-9A-Z_-]+@\w+([-.]\w+)+(,[.a-z0-9A-Z_-]+@\w+([-.]\w+)+)*$/.test(value))){
+	//if(value && !/^[.a-z0-9A-Z_-]+(@)?\w+([-.]\w+)+(,[.a-z0-9A-Z_-]+(@)?\w+([-.]\w+)+)*$/.test(value)){
+	if(value && !/^[.a-z0-9A-Z_-]+@{0,1}\w+([-.]\w+)+((,[.a-z0-9A-Z_-]+([-.]\w+)+)|(,[.a-z0-9A-Z_-]+@\w+([-.]\w+)+))*$/.test(value)){
+		console.log(1212)
+	}
+})
+</script>
+</html>
